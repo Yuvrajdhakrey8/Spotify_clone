@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background: linear-gradient(to right, blue, orange, pink);
+
+}
+
+nav{
+    font-family:'Ubuntu', sans-serif;
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    color: white;
+    text-align: center;
+}
+
+ul img{
+    height: 40px;
+    /* margin-top: 8px;
+    margin-bottom: 8px; */
+}
+
+.brand{
+    font-size:30px;
+    font-weight: 600;
+}
+
+ul li{
+    margin-top: auto;
+    margin-left:8px ;
+    margin-bottom: auto;
+}
+
+.li{
+    margin-left: 30px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.container{
+    /* border: 3px solid purple; */
+    min-height: 100vh;
+}
+
+.hero_section{
+    /* border: 3px solid red; */
+    color: rgb(252, 254, 254);
+    height: 95vh;
+    width: 80vw;
+    display: block;
+    margin: 32px auto;
+    border-radius: 10px;
+    background-image: url(./bg.jpg);
+    background-size: cover;
+}
+
+.songList{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+}
+h1{
+    margin-bottom: 65px;
+    margin-top: 20px;
+    font-size:3rem;
+}
+
+.songItemContainer{
+    display: flex;
+    flex-direction: column;
+
+}
+.songItems{
+    background-color: antiquewhite;
+    color: black;
+    border-radius: 35px;
+    width: 50%;
+    height: 2.3rem;
+    display: flex;
+    font-weight:lighter;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.plays{
+    cursor: pointer;
+}
+
+.playPause{
+    margin:10px;
+}
+.coverImg{
+    width:32px;
+    border-radius: 50%;
+    margin: 5px;
+}
+.one{
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.songDetails{
+    margin: 0 23px;
+}
+
+.name{
+    padding-top: 7px;
+    font-size: 17px;
+}
+
+.playPause{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time{
+    padding-top: 7px;
+    font-size: 17px;
+}
+
+footer{
+    background-color: black;
+    height: 130px;
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+.icons{
+    cursor: pointer;
+    margin: 15px 0;
+}
+
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.songInfo{
+    color: white    ;
+}
+
+.playInfo{
+    position: absolute;
+    left: 10vw;
+    font-size: 20px;
+}
+
+.playingTime{
+    position: absolute;
+    right: 9vw;
+    font-size: 17px;
+    margin-top: -18px;
+}
+
+#gif{
+    opacity: 0;
+    width: 44px;
+    transition: opacity 0.4s ease-in;;
+}
+
